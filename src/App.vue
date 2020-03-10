@@ -18,7 +18,8 @@ import Drawer from "./components/Drawer";
 export default {
   name: "App",
   components: {
-    NavBar
+    NavBar,
+    Drawer
   }
 };
 </script>
