@@ -2,7 +2,7 @@
   <div>
     <v-container>
       <v-row>
-        <v-col v-for="movie in movies" :key="movie.id" cols="4">
+        <v-col v-for="movie in movies" :key="movie.id" cols="3">
           <MovieCard :movie="movie" :imageURL="imageURL" />
         </v-col>
       </v-row>
