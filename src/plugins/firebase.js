@@ -6,13 +6,13 @@ import "firebase/firebase-auth"
 import * as firebaseui from "firebaseui"
 
 const firebaseConfig = {
-    apiKey: process.env.VUE_APP_FIREBASE_apiKey,
-    authDomain: process.env.VUE_APP_FIREBASE_authDomain,
-    databaseURL: process.env.VUE_APP_FIREBASE_databaseURL,
-    projectId: process.env.VUE_APP_FIREBASE_projectId,
-    storageBucket: process.env.VUE_APP_FIREBASE_storageBucket,
-    messagingSenderId: process.env.VUE_APP_FIREBASE_messagingSenderId,
-    appId: process.env.VUE_APP_FIREBASE_appId,
+    apiKey: "AIzaSyDH9dFKdybz6dxLAcGmVEtQ1NYrZAMr-pY",
+    authDomain: "moviesdb-ea52e.firebaseapp.com",
+    databaseURL: "https://moviesdb-ea52e.firebaseio.com",
+    projectId: "moviesdb-ea52e",
+    storageBucket: "moviesdb-ea52e.appspot.com",
+    messagingSenderId: "802221054255",
+    appId: "1:802221054255:web:85bee6af7d717e9eeee9da",
 }
 
 firebase.initializeApp(firebaseConfig)

@@ -15,7 +15,10 @@ export default {
           return false
         },
       },
-      signInOptions: [this.$firebase.auth.GoogleAuthProvider.PROVIDER_ID, this.$firebase.auth.EmailAuthProvider.PROVIDER_ID],
+      signInOptions: [
+        this.$firebase.auth.GoogleAuthProvider.PROVIDER_ID, 
+        this.$firebase.auth.EmailAuthProvider.PROVIDER_ID
+        ]
     }
     this.$firebaseui.start("#firebaseui-auth-container", uiConfig)
   },
