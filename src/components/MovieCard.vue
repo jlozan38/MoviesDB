@@ -11,7 +11,7 @@
         v-for="genre in movie.genre_ids"
         :key="genre"
         class="ma-2 purple--text text--darken-4"
-        color="purple lighten-4"
+        color="green lighten-4"
         x-small
       >
         {{ genres.find(g => g.id === genre).name }}
@@ -23,11 +23,11 @@
     </v-card-text>
 
     <v-card-actions>
-      <v-btn color="purple" text :disabled="noLoved(movie.id)" @click="addLovedMovie(movie)">
+      <v-btn color="red" text :disabled="noLoved(movie.id)" @click="addLovedMovie(movie)">
         Love it
       </v-btn>
       <v-spacer />
-      <v-btn color="orange" :disabled="noWatchlist(movie.id)" text @click="addWatchlist(movie)">
+      <v-btn color="purple" :disabled="noWatchlist(movie.id)" text @click="addWatchlist(movie)">
         Watchlist
       </v-btn>
     </v-card-actions>
